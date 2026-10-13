@@ -1,0 +1,7 @@
+[extension]
+name = "native_pitch"
+version = "0.9.2"
+language = "cpp"
+entry_module = "hum2song.extensions.native_pitch.binding"
+description = "YIN-based pitch extractor, C++ core via ctypes."
+options = { frame_ms = 32, threshold = 0.15 }
