@@ -1,0 +1,30 @@
+# hum2song host configuration.
+# Loaded by hum2song.host.bootstrap on startup.
+
+[host]
+name = "hum2song"
+version = "0.9.2"
+sample_rate = 44100
+buffer_frames = 2048
+
+[paths]
+extension_search = [
+    "src/hum2song/extensions",
+    "~/.hum2song/extensions",
+]
+model_dir = "models/weights"
+render_dir = "renders"
+
+[loader]
+# Extensions loaded in this order. Missing ones are skipped with a warning.
+enabled = [
+    "native_pitch",
+    "dotnet_vocodec",
+    "jvm_formant",
+]
+strict_contract = true
+allow_untrusted_remote = false
+
+[registry]
+manifest = "config/registry.toml"
+verify_signatures = true
