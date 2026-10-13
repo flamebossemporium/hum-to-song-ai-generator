@@ -1,0 +1,7 @@
+[extension]
+name = "jvm_formant"
+version = "0.2.1"
+language = "java"
+entry_module = "hum2song.extensions.jvm_formant.binding"
+description = "Formant shaper using LPC analysis, JDK 21 via pyjnius."
+options = { vowel = "ah", brightness = 0.6 }
