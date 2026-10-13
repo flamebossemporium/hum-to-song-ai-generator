@@ -1,0 +1,7 @@
+[extension]
+name = "dotnet_vocodec"
+version = "0.4.0"
+language = "csharp"
+entry_module = "hum2song.extensions.dotnet_vocodec.binding"
+description = "WORLD-style vocoder, .NET 8 native AOT library via pythonnet."
+options = { breathiness = 0.15, vibrato_hz = 5.2 }
