@@ -1,0 +1,47 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.log
+
+# Native extension build artifacts
+src/hum2song/extensions/native_pitch/build/
+src/hum2song/extensions/native_pitch/*.pyd
+src/hum2song/extensions/native_pitch/*.so
+src/hum2song/extensions/native_pitch/*.dll
+
+# .NET / C# extension
+src/hum2song/extensions/dotnet_vocodec/bin/
+src/hum2song/extensions/dotnet_vocodec/obj/
+
+# Java extension
+src/hum2song/extensions/jvm_formant/target/
+src/hum2song/extensions/jvm_formant/*.class
+
+# Model weights (large, fetched via scripts/fetch_weights.py)
+models/weights/*.safetensors
+models/weights/*.onnx
+models/weights/*.bin
+models/weights/*.pt
+
+# Local user config + rendered songs
+config/local.toml
+renders/
+*.wav
+*.mp3
+*.flac
+
+# IDE
+.idea/
+.vscode/
+*.swp
+.DS_Store
